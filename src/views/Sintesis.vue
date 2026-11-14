@@ -2,13 +2,13 @@
 .curso-main-container.pb-3
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. 
+    p A continuación, se presenta un esquema jerárquico sobre caracterización y medición del proceso productivo. Presenta cuatro apartados principales: configuración del sistema productivo, análisis del desempeño, indicadores de productividad y gestión visual con respuesta operativa. Incluye temas sobre tipos de plantas, recursos técnicos, maquinaria, flujo de materiales, capacidad, eficiencia, SAM, reportes, tiempos improductivos, contingencias y acciones correctivas.
     
 
     .row.justify-content-center
       .col-lg-10.mb-5.bgs.p-4.brad
         figure
-          img(src="@/assets/curso/sintesis.svg", alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. ")
+          img(src="@/assets/curso/sintesis.svg", alt="Esquema jerárquico sobre caracterización y medición del proceso productivo. Presenta cuatro apartados principales: configuración del sistema productivo, análisis del desempeño, indicadores de productividad y gestión visual con respuesta operativa. Incluye temas sobre tipos de plantas, recursos técnicos, maquinaria, flujo de materiales, capacidad, eficiencia, SAM, reportes, tiempos improductivos, contingencias y acciones correctivas.")
       .col-auto
         a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
           .anexo__icono
