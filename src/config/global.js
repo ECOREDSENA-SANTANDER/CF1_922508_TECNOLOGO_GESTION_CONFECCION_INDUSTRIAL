@@ -1,7 +1,8 @@
 export default {
   global: {
     Name: 'Caracterización y medición del proceso productivo',
-    Description: 'Aborda los fundamentos técnicos para interpretar la estructura operativa de una planta de confección industrial y medir su desempeño productivo. Sus contenidos integran la configuración del sistema productivo, los tipos de plantas y sistemas de producción, los recursos técnicos, la maquinaria, el flujo de materiales, las especificaciones de producción, el análisis de capacidad, los puntos críticos, los cuellos de botella, los estándares técnicos, los indicadores de productividad y la gestión visual para la respuesta operativa.',
+    Description:
+      'Aborda los fundamentos técnicos para interpretar la estructura operativa de una planta de confección industrial y medir su desempeño productivo. Sus contenidos integran la configuración del sistema productivo, los tipos de plantas y sistemas de producción, los recursos técnicos, la maquinaria, el flujo de materiales, las especificaciones de producción, el análisis de capacidad, los puntos críticos, los cuellos de botella, los estándares técnicos, los indicadores de productividad y la gestión visual para la respuesta operativa.',
     imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.png',
     fondoBannerPrincipal: '@/assets/curso/portada/fondo-banner-principal.png',
     imagenesDecorativasBanner: [
@@ -159,100 +160,124 @@ export default {
   glosario: [
     {
       termino: 'Acción correctiva',
-      significado: 'Intervención orientada a eliminar o controlar la causa confirmada de una desviación.',
+      significado:
+        'Intervención orientada a eliminar o controlar la causa confirmada de una desviación.',
     },
     {
       termino: 'Capacidad operativa',
-      significado: 'Volumen de producción alcanzable bajo las condiciones reales de recursos, disponibilidad y eficiencia.',
+      significado:
+        'Volumen de producción alcanzable bajo las condiciones reales de recursos, disponibilidad y eficiencia.',
     },
     {
       termino: 'Capacidad teórica',
-      significado: 'Máximo calculado bajo condiciones ideales a partir del tiempo disponible y el estándar técnico.',
+      significado:
+        'Máximo calculado bajo condiciones ideales a partir del tiempo disponible y el estándar técnico.',
     },
     {
       termino: 'Cuello de botella',
-      significado: 'Recurso, operación o condición que limita el ritmo general del sistema productivo.',
+      significado:
+        'Recurso, operación o condición que limita el ritmo general del sistema productivo.',
     },
     {
       termino: 'Curva de experiencia',
-      significado: 'Representación de la variación del tiempo o esfuerzo unitario conforme aumenta la producción acumulada.',
+      significado:
+        'Representación de la variación del tiempo o esfuerzo unitario conforme aumenta la producción acumulada.',
     },
     {
       termino: 'Eficiencia',
-      significado: 'Relación porcentual entre los minutos estándar producidos y los minutos utilizados.',
+      significado:
+        'Relación porcentual entre los minutos estándar producidos y los minutos utilizados.',
     },
     {
       termino: 'Especificación técnica',
-      significado: 'Información documentada que establece requisitos del producto, los materiales o el proceso.',
+      significado:
+        'Información documentada que establece requisitos del producto, los materiales o el proceso.',
     },
     {
       termino: 'Estándar técnico',
-      significado: 'Referencia aprobada utilizada para comparar la ejecución real con una condición definida.',
+      significado:
+        'Referencia aprobada utilizada para comparar la ejecución real con una condición definida.',
     },
     {
       termino: 'Flujo de materiales',
-      significado: 'Recorrido de materias primas, piezas y productos a través de las etapas de transformación.',
+      significado:
+        'Recorrido de materias primas, piezas y productos a través de las etapas de transformación.',
     },
     {
       termino: 'Gestión visual',
-      significado: 'Presentación estructurada de datos operativos mediante gráficas, colores, señales o tableros.',
+      significado:
+        'Presentación estructurada de datos operativos mediante gráficas, colores, señales o tableros.',
     },
     {
       termino: 'Indicador',
-      significado: 'Medida definida mediante variables, fórmula, unidad y periodo para interpretar el comportamiento de un proceso.',
+      significado:
+        'Medida definida mediante variables, fórmula, unidad y periodo para interpretar el comportamiento de un proceso.',
     },
     {
       termino: 'Producto en proceso',
-      significado: 'Cantidad de piezas o unidades que permanece entre operaciones sin completar la totalidad de la transformación.',
+      significado:
+        'Cantidad de piezas o unidades que permanece entre operaciones sin completar la totalidad de la transformación.',
     },
     {
       termino: 'SAM',
-      significado: 'Minutos estándar permitidos para ejecutar una operación o fabricar una unidad bajo el método definido.',
+      significado:
+        'Minutos estándar permitidos para ejecutar una operación o fabricar una unidad bajo el método definido.',
     },
     {
       termino: 'Sistema productivo',
-      significado: 'Conjunto articulado de recursos, procesos, personas e información que transforma entradas en productos.',
+      significado:
+        'Conjunto articulado de recursos, procesos, personas e información que transforma entradas en productos.',
     },
     {
       termino: 'Tiempo improductivo',
-      significado: 'Intervalo programado en el que no se genera el resultado previsto debido a una interrupción identificada.',
+      significado:
+        'Intervalo programado en el que no se genera el resultado previsto debido a una interrupción identificada.',
     },
   ],
   referencias: [
     {
-      referencia: 'Citaristi, I. (2022). International Labour Organization - ILO. En Europa Publications (Ed.), The Europa directory of international organizations 2022 (24.ª ed., pp. 343–349). Routledge.',
+      referencia:
+        'Citaristi, I. (2022). International Labour Organization - ILO. En Europa Publications (Ed.), The Europa directory of international organizations 2022 (24.ª ed., pp. 343-349). Routledge.',
       link: '',
     },
     {
-      referencia: 'Das, S., & Patnaik, A. (2015). Production planning in the apparel industry. En R. Nayak & R. Padhye (Eds.), Garment manufacturing technology (pp. 81–108). Woodhead Publishing.',
+      referencia:
+        'Das, S., & Patnaik, A. (2015). Production planning in the apparel industry. En R. Nayak & R. Padhye (Eds.), Garment manufacturing technology (pp. 81-108). Woodhead Publishing.',
       link: '',
     },
     {
-      referencia: 'International Organization for Standardization. (2014a). Automation systems and integration—Key performance indicators (KPIs) for manufacturing operations management - Part 1: Overview, concepts and terminology (ISO 22400-1:2014).',
+      referencia:
+        'International Organization for Standardization. (2014a). Automation systems and integration—Key performance indicators (KPIs) for manufacturing operations management - Part 1: Overview, concepts and terminology (ISO 22400-1:2014).',
       link: '',
     },
     {
-      referencia: 'International Organization for Standardization. (2014b). Automation systems and integration - Key performance indicators for manufacturing operations management - Part 2: Definitions and descriptions (ISO 22400-2:2014).',
+      referencia:
+        'International Organization for Standardization. (2014b). Automation systems and integration - Key performance indicators for manufacturing operations management - Part 2: Definitions and descriptions (ISO 22400-2:2014).',
       link: '',
     },
     {
-      referencia: 'International Organization for Standardization. (2015). Safety of machinery - Emergency stop function - Principles for design (ISO 13850:2015).',
+      referencia:
+        'International Organization for Standardization. (2015). Safety of machinery - Emergency stop function - Principles for design (ISO 13850:2015).',
       link: '',
     },
     {
-      referencia: 'International Organization for Standardization. (1991). Textiles - Stitch types - Classification and terminology (ISO 4915:1991).',
+      referencia:
+        'International Organization for Standardization. (1991). Textiles - Stitch types - Classification and terminology (ISO 4915:1991).',
       link: '',
     },
     {
-      referencia: 'Nayak, R., & Padhye, R. (Eds.). (2015). Garment manufacturing technology. Woodhead Publishing.',
+      referencia:
+        'Nayak, R., & Padhye, R. (Eds.). (2015). Garment manufacturing technology. Woodhead Publishing.',
       link: '',
     },
     {
-      referencia: 'Nchalala, A., Alexander, T., & Taifa, I. W. R. (2023). Establishing standard allowed minutes and sewing efficiency for the garment industry in Tanzania. Research Journal of Textile and Apparel, 27(2), 246–263.',
+      referencia:
+        'Nchalala, A., Alexander, T., & Taifa, I. W. R. (2023). Establishing standard allowed minutes and sewing efficiency for the garment industry in Tanzania. Research Journal of Textile and Apparel, 27(2), 246-263.',
       link: '',
     },
     {
-      referencia: 'Wright, T. P. (1936). Factors affecting the cost of airplanes. Journal of the Aeronautical Sciences, 3(4), 122–128.',
+      referencia:
+        'Wright, T. P. (1936). Factors affecting the cost of airplanes. Journal of the Aeronautical Sciences, 3(4), 122-128.',
       link: '',
     },
   ],
@@ -267,7 +292,7 @@ export default {
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
-          nombre: '---',
+          nombre: 'Edison Eduardo Mantilla Cuadros',
           cargo: 'Responsable de línea de producción',
           centro: 'Centro Agroturístico - Regional Santander',
         },
@@ -277,8 +302,13 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: ' ',
-          cargo: ' ',
+          nombre: 'Paola Angélica Castro Salazar ',
+          cargo: 'Experta temática ',
+          centro: 'Centro Agroturístico - Regional Santander',
+        },
+        {
+          nombre: 'Erika Fernanda Mejía Pinzón ',
+          cargo: 'Evaluadora instruccional ',
           centro: 'Centro Agroturístico - Regional Santander',
         },
       ],
@@ -287,7 +317,7 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: ' ',
+          nombre: 'Marcos Yamid Rubiano Avellaneda',
           cargo: 'Diseñador de contenidos',
           centro: 'Centro Agroturístico - Regional Santander',
         },
@@ -308,12 +338,12 @@ export default {
       autores: [
         {
           nombre: ' ',
-          cargo: 'Validador y vinculador de recursos educativos digitales',
+          cargo: 'Validadora y vinculadora de recursos educativos digitales',
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
           nombre: ' ',
-          cargo: 'Evaluador de contenidos inclusivos y accesibles',
+          cargo: 'Evaluadora de contenidos inclusivos y accesibles',
           centro: 'Centro Agroturístico - Regional Santander',
         },
       ],
