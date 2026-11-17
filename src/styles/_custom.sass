@@ -129,7 +129,13 @@ figcaption
   &-7
     background-color: #513013 
   &-8
-    background-color: #FBE8D7 !important
+    background-color: #FBE8D7 !important 
+  &-9
+    background-color: #55AFD4
+  &-10
+    background-color: #224655 
+  &-11
+    background-color: #F6D0AF 
 .bgcompl
   &-1
     background: #513013
@@ -167,6 +173,24 @@ figcaption
     height: 4px
     z-index: 0
     bottom: 0px
+.subt-2
+  display: flex
+  align-items: center
+  position: relative  
+  width: fit-content  
+  img
+    width: 65px
+    z-index: 1
+  h3 
+    z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    background-color: #FBE8D7 
+    border-radius: 100px
+    width: 100%
+    height: 65%
+    z-index: 0
 .br-tl
   border-top-left-radius: 60px
 .br-tr
@@ -189,6 +213,16 @@ figcaption
   font-style: normal !important
 .slyder-f__btn i
   color: $color-acento-botones
+.acordion
+  &__accion__btn--b
+    border-color: $color-acento-botones
+    background-color: $color-acento-botones
+  &__titulo h3
+    color: $white
+  &__activo
+    background-color: #BBDFEE
+    .acordion__titulo h3
+      color: $color-sistema-texto
 
 
 /**************************************************************/

@@ -53,7 +53,7 @@
       .col-lg-4.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t1/3.png', alt='')
       .col-lg-8(data-aos="fade-left")
-        AcordionA(tipo="b" clase-tarjeta="tarjeta tarjeta--azul")
+        AcordionA(tipo="b" clase-tarjeta="tarjeta bg-color-7")
           .row(titulo="El primero corresponde a la condición documental")
             .col-md-12.mb-4.mb-md-0
               p Órdenes, fichas, tablas de medidas, secuencias y registros que expresan lo que debería ocurrir.    
