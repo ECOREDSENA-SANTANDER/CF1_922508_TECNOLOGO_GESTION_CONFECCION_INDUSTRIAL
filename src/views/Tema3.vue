@@ -17,10 +17,10 @@
           br
           | Un incremento de la producción no implica necesariamente una mejora de la productividad. El volumen puede aumentar por la incorporación de más personas, la ampliación de la jornada, el procesamiento de una referencia con menor contenido de trabajo o la liberación de unidades que permanecían acumuladas. De manera similar, una eficiencia elevada pierde valor cuando coincide con aumentos en los reprocesos, el desperdicio o el producto en proceso.
       
-    p La norma ISO 22400 establece un marco para definir y utilizar indicadores clave en la gestión de operaciones de manufactura. Su aplicación exige documentar las variables, la relación matemática, el contexto y el propósito de cada medición. El nombre del indicador no garantiza que dos áreas estén midiendo lo mismo; la comparabilidad depende de que compartan definiciones, unidades, periodos y reglas de registro (ISO, 2014a, 2014b).
+    p.mb-4 La norma ISO 22400 establece un marco para definir y utilizar indicadores clave en la gestión de operaciones de manufactura. Su aplicación exige documentar las variables, la relación matemática, el contexto y el propósito de cada medición. El nombre del indicador no garantiza que dos áreas estén midiendo lo mismo; la comparabilidad depende de que compartan definiciones, unidades, periodos y reglas de registro (ISO, 2014a, 2014b).
 
-    .row.justify-content-center.mb-4
-      .col-lg-8(data-aos="fade-right")
+    .row.justify-content-center.align-items-center.mb-4
+      .col-lg-9(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Tabla 20.
           span Diferencias entre conceptos utilizados para interpretar el desempeño productivo
@@ -28,7 +28,7 @@
           table
             thead
               tr
-                th Concepto
+                th.w-25 Concepto
                 th Base de comparación
                 th Lectura técnica
             tbody
@@ -60,75 +60,78 @@
                 td Calidad a la primera
                 td Unidades conformes sin reproceso frente al total procesado.
                 td Expresa la capacidad para cumplir los requisitos desde la primera ejecución.
-      .col-lg-4.d-none.d-lg-block(data-aos="fade-left")
+      .col-lg-3.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t3/2.png', alt='')
     
-    p Estas métricas se complementan, pero no son intercambiables. Una línea puede cumplir la cantidad programada mediante horas adicionales y presentar, al mismo tiempo, una eficiencia inferior a la prevista. También puede registrar una eficiencia favorable mientras acumula paquetes entre operaciones, puesto que los minutos estándar producidos no describen por sí solos la continuidad del flujo.
+    p.mb-5 Estas métricas se complementan, pero no son intercambiables. Una línea puede cumplir la cantidad programada mediante horas adicionales y presentar, al mismo tiempo, una eficiencia inferior a la prevista. También puede registrar una eficiencia favorable mientras acumula paquetes entre operaciones, puesto que los minutos estándar producidos no describen por sí solos la continuidad del flujo.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Criterio para definir un indicador
     
-    p La definición debe incluir el propósito, las variables, la fórmula, la unidad, el periodo, el alcance, la fuente de los datos y las exclusiones. Cualquier modificación en estos elementos debe quedar documentada para conservar la trazabilidad de la serie histórica.
+    p.mb-0 La definición debe incluir el propósito, las variables, la fórmula, la unidad, el periodo, el alcance, la fuente de los datos y las exclusiones. Cualquier modificación en estos elementos debe quedar documentada para conservar la trazabilidad de la serie histórica.
+
 
     Separador
     #t_3_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.1  Eficiencia individual y del módulo
 
-    img(src='@/assets/curso/temas/t3/3.png', alt='')
+    img.d-none.d-lg-block.mb-4(src='@/assets/curso/temas/t3/3.png', alt='')
 
     p La eficiencia compara el contenido estándar del trabajo realizado con el tiempo contabilizado para ejecutarlo. Su resultado se expresa en porcentaje y muestra qué proporción del tiempo empleado se convirtió en minutos estándar producidos. El cálculo no puede basarse únicamente en el número de unidades, porque las referencias y las operaciones presentan contenidos de trabajo diferentes.
-    p El minuto estándar permitido (SAM), representa el tiempo asignado para ejecutar una operación o fabricar una unidad bajo un método definido y con las tolerancias correspondientes. Una operación con SAM de 0,80 minutos genera menos contenido estándar por unidad que otra con SAM de 1,25 minutos, aunque ambas registren la misma cantidad terminada. El SAM proporciona una unidad común para relacionar producción, tiempo y eficiencia (Nchalala et al., 2023).
+    p.mb-4 El minuto estándar permitido (SAM), representa el tiempo asignado para ejecutar una operación o fabricar una unidad bajo un método definido y con las tolerancias correspondientes. Una operación con SAM de 0,80 minutos genera menos contenido estándar por unidad que otra con SAM de 1,25 minutos, aunque ambas registren la misma cantidad terminada. El SAM proporciona una unidad común para relacionar producción, tiempo y eficiencia (Nchalala et al., 2023).
 
-    AcordionA(tipo="b" clase-tarjeta="tarjeta bg-color-7")
-      .row(titulo="Minutos estándar producidos")
-        .col-md-6.mb-4.mb-md-0
+    AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta bg-color-7")
+      .row.justify-content-center(titulo="Minutos estándar producidos")
+        .col-11.col-lg-6
           p Los minutos estándar producidos se obtienen al multiplicar la cantidad aceptada por el SAM aplicable.   
-        .col-md-6
+        .col-md-5.d-none.d-lg-block
           img(src='@/assets/curso/temas/t3/4.png', alt='')
-      .row(titulo="Fórmula básica")
-        .col-md-6.mb-4.mb-md-0
-          p Minutos estándar producidos = unidades aceptadas × SAM. Cuando durante el mismo periodo se ejecutan varias operaciones o referencias, los resultados deben calcularse por separado y sumarse posteriormente:
-          h3 Fórmula para varias referencias
-          p Minutos estándar totales = (unidades de la referencia A × SAM de la referencia A) + (unidades de la referencia B × SAM de la referencia B) + los resultados de las demás referencias incluidas.
+      .row.justify-content-center(titulo="Fórmula básica")
+        .col-11.col-lg-6
+          p.mb-4 Minutos estándar producidos = unidades aceptadas x SAM. Cuando durante el mismo periodo se ejecutan varias operaciones o referencias, los resultados deben calcularse por separado y sumarse posteriormente:
+          h4 Fórmula para varias referencias
+          p Minutos estándar totales = (unidades de la referencia A x SAM de la referencia A) + (unidades de la referencia B x SAM de la referencia B) + los resultados de las demás referencias incluidas.
           p Esta conversión evita tratar como equivalentes productos con contenidos de trabajo distintos.
-        .col-md-6
+        .col-lg-5.d-none.d-lg-block
           img(src='@/assets/curso/temas/t3/5.png', alt='')
-      .row(titulo="Eficiencia individual")
-        .col-md-6.mb-4.mb-md-0
+      .row.justify-content-center(titulo="Eficiencia individual")
+        .col-11.col-lg-6
           p La eficiencia individual relaciona los minutos estándar generados por una persona con los minutos reales contabilizados durante el periodo.
-        .col-md-6
+        .col-lg-5.d-none.d-lg-block
           img(src='@/assets/curso/temas/t3/6.png', alt='')
-      .row(titulo="Fórmula de eficiencia individual")
-        .col-md-6.mb-4.mb-md-0
-          p Eficiencia individual = minutos estándar producidos ÷ minutos reales contabilizados × 100.
+      .row.justify-content-center(titulo="Fórmula de eficiencia individual")
+        .col-11.col-lg-6
+          p Eficiencia individual = minutos estándar producidos ÷ minutos reales contabilizados x 100.
           p Si una operación tiene un SAM de 0,75 minutos y durante 420 minutos se obtienen 500 unidades aceptadas, el cálculo se realiza en dos pasos:
-          p #[b a) Minutos estándar producidos:] 500 unidades × 0,75 minutos = 375 minutos estándar.
-          p #[b b) Eficiencia individual:]  375 minutos estándar ÷ 420 minutos reales × 100 = 89,29 %.
-        .col-md-6
+          p #[b a) Minutos estándar producidos:] 500 unidades x 0,75 minutos = 375 minutos estándar.
+          p #[b b) Eficiencia individual:]  375 minutos estándar ÷ 420 minutos reales x 100 = 89,29 %.
+        .col-lg-5.mb-4.d-none.d-lg-block
           img(src='@/assets/curso/temas/t3/7.png', alt='')
-        p El resultado indica que los minutos estándar generados equivalen al 89,29 % del tiempo contabilizado. El porcentaje restante no debe atribuirse automáticamente a inactividad. La diferencia puede estar relacionada con abastecimiento, ajustes, cambios de referencia, esperas, fallas del equipo, reprocesos o registros incompletos.
-        p El denominador requiere una definición estable. Algunas organizaciones utilizan los minutos de presencia, mientras otras descuentan pausas programadas, reuniones o tiempos clasificados como no productivos. Como estas decisiones modifican el resultado, deben aplicarse con el mismo criterio en todos los periodos comparados.
-      .row(titulo="Eficiencia del módulo")
-        .col-md-6.mb-4.mb-md-0
-          p Minutos estándar producidos = unidades aceptadas × SAM. Cuando durante el mismo periodo se ejecutan varias operaciones o referencias, los resultados deben calcularse por separado y sumarse posteriormente:  
-          h3 Fórmula para varias referencias
-          p Minutos estándar totales = (unidades de la referencia A × SAM de la referencia A) + (unidades de la referencia B × SAM de la referencia B) + los resultados de las demás referencias incluidas.
+        .col-11
+          p El resultado indica que los minutos estándar generados equivalen al 89,29 % del tiempo contabilizado. El porcentaje restante no debe atribuirse automáticamente a inactividad. La diferencia puede estar relacionada con abastecimiento, ajustes, cambios de referencia, esperas, fallas del equipo, reprocesos o registros incompletos.
+          p El denominador requiere una definición estable. Algunas organizaciones utilizan los minutos de presencia, mientras otras descuentan pausas programadas, reuniones o tiempos clasificados como no productivos. Como estas decisiones modifican el resultado, deben aplicarse con el mismo criterio en todos los periodos comparados.
+      .row.justify-content-center(titulo="Eficiencia del módulo")
+        .col-11.col-lg-6.mb-4.mb-md-0
+          p.mb-4 Minutos estándar producidos = unidades aceptadas x SAM. Cuando durante el mismo periodo se ejecutan varias operaciones o referencias, los resultados deben calcularse por separado y sumarse posteriormente:  
+          h4 Fórmula para varias referencias
+          p Minutos estándar totales = (unidades de la referencia A x SAM de la referencia A) + (unidades de la referencia B x SAM de la referencia B) + los resultados de las demás referencias incluidas.
           p Esta conversión evita tratar como equivalentes productos con contenidos de trabajo distintos.
-        .col-md-6
+        .col-lg-5.d-none.d-lg-block
           img(src='@/assets/curso/temas/t3/8.png', alt='')
-      .row(titulo="Fórmula de eficiencia del módulo")
-        .col-md-6.mb-4.mb-md-0
-          p Eficiencia del módulo = minutos estándar producidos por el módulo ÷ minutos reales totales del módulo × 100.
-          p Cuando todas las personas participan durante el mismo intervalo, los minutos reales totales se obtienen multiplicando el número de integrantes por el tiempo contabilizado para cada uno:
-          h3 Minutos reales del módulo
-          p Minutos reales totales = número de personas × minutos contabilizados por persona.
-          p Si existen entradas, salidas, permisos o asignaciones parciales, debe sumarse el tiempo real de cada persona. Utilizar una duración uniforme en esas condiciones produciría una disponibilidad superior a la realmente aportada.
-          p Cuando el módulo entrega prendas completas, puede aplicarse el SAM total de la referencia. Si solo ejecuta una parte de la secuencia, deben sumarse los SAM de las operaciones desarrolladas. Aplicar el SAM completo a un conjunto que realiza únicamente algunas operaciones sobrestima los minutos estándar y altera la eficiencia.   
-        .col-md-6
+      .row.justify-content-center(titulo="Fórmula de eficiencia del módulo")
+        .col-11.col-lg-6
+          p Eficiencia del módulo = minutos estándar producidos por el módulo ÷ minutos reales totales del módulo x 100.
+          p.mb-4 Cuando todas las personas participan durante el mismo intervalo, los minutos reales totales se obtienen multiplicando el número de integrantes por el tiempo contabilizado para cada uno:            
+        .col-lg-5.d-none.d-lg-block
           img(src='@/assets/curso/temas/t3/9.png', alt='')
+        .col-11
+          h4 Minutos reales del módulo
+          p Minutos reales totales = número de personas x minutos contabilizados por persona.
+          p Si existen entradas, salidas, permisos o asignaciones parciales, debe sumarse el tiempo real de cada persona. Utilizar una duración uniforme en esas condiciones produciría una disponibilidad superior a la realmente aportada.
+          p Cuando el módulo entrega prendas completas, puede aplicarse el SAM total de la referencia. Si solo ejecuta una parte de la secuencia, deben sumarse los SAM de las operaciones desarrolladas. Aplicar el SAM completo a un conjunto que realiza únicamente algunas operaciones sobrestima los minutos estándar y altera la eficiencia. 
     
-    .row.justify-content-center.mb-4
+    .row.justify-content-center.mb-5
       .col-lg-8(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Tabla 21.
@@ -173,67 +176,72 @@
       h3.mb-0.mx-3 Ejemplo con referencias diferentes
 
     p Un módulo procesa 180 unidades de la referencia A, cuyo SAM es de 14,50 minutos, y 120 unidades de la referencia B, con SAM de 18,20 minutos.
-    p Los minutos estándar se calculan por referencia:
+    p.mb-4 Los minutos estándar se calculan por referencia:
 
-    .row.justify-content-center.align-items-center.mb-5.bg-color-10
-      .col-lg-5
-        ul.lista-ul.text-white
-          li 
-            i.lista-ul__vineta
-            | Referencia A: 180 unidades × 14,50 minutos = 2.610 minutos estándar.
-          li 
-            i.lista-ul__vineta
-            | Referencia B: 120 unidades × 18,20 minutos = 2.184 minutos estándar.
-          li 
-            i.lista-ul__vineta
-            | Total producido: 2.610 + 2.184 = 4.794 minutos estándar.
-        p.text-white Si el módulo está integrado por 12 personas y cada una aporta 450 minutos, el tiempo real total corresponde a:
-        p.text-white 12 personas × 450 minutos = 5.400 minutos reales.
-        p.text-white La eficiencia obtenida es:
-        p.text-white 4.794 minutos estándar ÷ 5.400 minutos reales × 100 = 88,78 %.
-        p.text-white Sumar únicamente las 300 unidades impediría reconocer que la referencia B incorpora mayor contenido de trabajo. La conversión a minutos estándar establece una base común para la comparación.
-      .col-lg-7
-        img(src='@/assets/curso/temas/t3/11.png', alt='')
+    .row.bgcompl-2.align-items-center.p-4.mb-5(data-aos="fade")
+      .col-lg-12.col-12.px-lg-4
+        .row.justify-content-center.align-items-center
+
+          .bg-color-10.tarjeta.p-4
+            .row.justify-content-center.align-items-center
+              .col-lg-5.text-white
+                ul.lista-ul.text-white.fa-lista
+                  li 
+                    i.lista-ul__vineta
+                    span.mb-0 Referencia A: 180 unidades x 14,50 minutos = 2.610 minutos estándar.
+                  li 
+                    i.lista-ul__vineta
+                    span.mb-0 Referencia B: 120 unidades x 18,20 minutos = 2.184 minutos estándar.
+                  li 
+                    i.lista-ul__vineta
+                    span.mb-0 Total producido: 2.610 + 2.184 = 4.794 minutos estándar.
+                p Si el módulo está integrado por 12 personas y cada una aporta 450 minutos, el tiempo real total corresponde a:
+                p 12 personas x 450 minutos = 5.400 minutos reales.
+                p La eficiencia obtenida es:
+                p 4.794 minutos estándar ÷ 5.400 minutos reales x 100 = 88,78 %.
+                p Sumar únicamente las 300 unidades impediría reconocer que la referencia B incorpora mayor contenido de trabajo. La conversión a minutos estándar establece una base común para la comparación.
+              .col-lg-6.d-none.d-lg-block
+                img(src='@/assets/curso/temas/t3/11.png', alt='')
     
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Condiciones para interpretar la eficiencia
 
     p La confiabilidad del resultado depende de la vigencia del estándar y de la calidad del registro. Un SAM desactualizado, calculado con otro método o asociado con una versión anterior del producto puede generar porcentajes que no representan el desempeño real. También se producen distorsiones cuando se incluyen unidades defectuosas como producción aceptada, se omiten tiempos utilizados o se asignan al periodo unidades terminadas en otro corte.
-    p Una comparación válida requiere:
+    p.mb-4 Una comparación válida requiere:
 
-    .row.justify-content-center.mb-5
-      .col-lg-3.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Utilizar el mismo método de cálculo.
-      .col-lg-3.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Mantener estable la definición del tiempo contabilizado.
-      .col-lg-3.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Aplicar el SAM vigente para la referencia.
-      .col-lg-3.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Separar productos con distinto contenido estándar.
-    .row.justify-content-center.mb-5
-      .col-lg-3.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Evitar duplicidades entre unidades procesadas, reprocesadas y aceptadas.
-      .col-lg-3.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Registrar cambios de personal, maquinaria, material y método.
-      .col-lg-3.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Comparar periodos y alcances equivalentes.
-      .col-lg-3.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Confirmar que la producción corresponda al mismo intervalo del tiempo utilizado.
+    .row.justify-content-center.mb-5(data-aos="fade")
+      .col-lg-3.col-md-6.mb-3
+        .tarjeta.bg-color-9.p-4.h-100
+          p.text-center.mb-0 Utilizar el mismo método de cálculo.
+      .col-lg-3.col-md-6.mb-3
+        .tarjeta.bg-color-9.p-4.h-100
+          p.text-center.mb-0 Mantener estable la definición del tiempo contabilizado.
+      .col-lg-3.col-md-6.mb-3
+        .tarjeta.bg-color-9.p-4.h-100
+          p.text-center.mb-0 Aplicar el SAM vigente para la referencia.
+      .col-lg-3.col-md-6.mb-3
+        .tarjeta.bg-color-9.p-4.h-100
+          p.text-center.mb-0 Separar productos con distinto contenido estándar.
+      .col-lg-3.col-md-6.mb-3
+        .tarjeta.bg-color-9.p-4.h-100
+          p.text-center.mb-0 Evitar duplicidades entre unidades procesadas, reprocesadas y aceptadas.
+      .col-lg-3.col-md-6.mb-3
+        .tarjeta.bg-color-9.p-4.h-100
+          p.text-center.mb-0 Registrar cambios de personal, maquinaria, material y método.
+      .col-lg-3.col-md-6.mb-3
+        .tarjeta.bg-color-9.p-4.h-100
+          p.text-center.mb-0 Comparar periodos y alcances equivalentes.
+      .col-lg-3.col-md-6.mb-3
+        .tarjeta.bg-color-9.p-4.h-100
+          p.text-center.mb-0 Confirmar que la producción corresponda al mismo intervalo del tiempo utilizado.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Lectura técnica de la eficiencia
     
-    p El porcentaje muestra la relación entre el trabajo estándar generado y el tiempo contabilizado. No identifica por sí solo la causa de una variación. Su interpretación debe considerar la disponibilidad de recursos, el abastecimiento, la calidad, el producto en proceso y las novedades operativas.
+    p.mb-0 El porcentaje muestra la relación entre el trabajo estándar generado y el tiempo contabilizado. No identifica por sí solo la causa de una variación. Su interpretación debe considerar la disponibilidad de recursos, el abastecimiento, la calidad, el producto en proceso y las novedades operativas.
+
 
     Separador
     #t_3_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -242,49 +250,49 @@
     p La capacidad por turno estima la cantidad de unidades que puede procesarse con los recursos disponibles durante un periodo definido. Los minutos laborables representan la oferta de tiempo, mientras que el SAM expresa la cantidad requerida para producir cada unidad.
     p El cálculo debe diferenciar la capacidad teórica de la capacidad planificada. La primera supone un aprovechamiento del 100 % de los minutos disponibles. La segunda incorpora una eficiencia prevista y ofrece una estimación más cercana a las condiciones definidas para la producción.
 
-    .tarjeta.tarjeta--azul.p-4
+    .tarjeta.bg-fondo-1.p-4.mb-4(data-aos='fade')
       SlyderA(tipo="b")
-        .row
-          .col-md-6.mb-4.mb-md-0
-            h3 Minutos disponibles
-            p Cuando todas las personas trabajan durante el mismo intervalo, los minutos disponibles se calculan así:
-            h4 Fórmula de minutos disponibles
-            p.mb-0 Minutos disponibles = número de personas × minutos laborables por persona.
+        .row.justify-content-center
+          .col-lg-5.col-11
+            h4 Minutos disponibles
+            p.mb-4 Cuando todas las personas trabajan durante el mismo intervalo, los minutos disponibles se calculan así:
+            h5 Fórmula de minutos disponibles
+            p.mb-0 Minutos disponibles = número de personas x minutos laborables por persona.
             p Si los tiempos individuales son diferentes, deben sumarse los minutos realmente aportados por cada persona.
             p El tiempo laborable debe establecerse antes del cálculo. Si el turno nominal tiene 480 minutos y se descuentan 40 minutos de pausas programadas, la base corresponde a 440 minutos por persona. Las deducciones deben mantenerse constantes para que la capacidad sea comparable. 
-          .col-md-6
+          .col-lg-5.d-none.d-lg-block
             img(src='@/assets/curso/temas/t3/12.png', alt='')
-        .row
-          .col-md-6.mb-4.mb-md-0
-            h3 Capacidad teórica
-            p La capacidad teórica supone una eficiencia del 100%.
-            h4 Fórmula de capacidad teórica
+        .row.justify-content-center
+          .col-lg-5.col-11
+            h4 Capacidad teórica
+            p.mb-4 La capacidad teórica supone una eficiencia del 100%.
+            h5 Fórmula de capacidad teórica
             p Capacidad teórica = minutos disponibles ÷ SAM de la prenda.
             p Para un módulo de 12 personas, con 440 minutos laborables por persona y un SAM de 18 minutos por prenda:
-            p.mb-0 #[b a) Minutos disponibles:] 12 personas × 440 minutos = 5.280 minutos.
+            p.mb-0 #[b a) Minutos disponibles:] 12 personas x 440 minutos = 5.280 minutos.
             p #[b b) Capacidad teórica:] 5.280 minutos ÷ 18 minutos por prenda = 293,33 prendas.
             p Como la producción terminada se expresa en unidades completas, se reportan 293 prendas. La fracción puede registrarse como producto en proceso si existe evidencia de su estado al cierre.
-          .col-md-6
+          .col-lg-5.d-none.d-lg-block
             img(src='@/assets/curso/temas/t3/13.png', alt='')
-        .row
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-center
+          .col-lg-3.col-11
             h3 Capacidad planificada
             p La capacidad planificada incorpora la eficiencia prevista, expresada en forma decimal.
             h4 Fórmula de capacidad planificada
-            p Capacidad planificada = minutos disponibles × eficiencia prevista ÷ SAM de la prenda.
+            p Capacidad planificada = minutos disponibles x eficiencia prevista ÷ SAM de la prenda.
             p Si el módulo dispone de 5.280 minutos, trabaja con una eficiencia prevista del 82 % y procesa una referencia con SAM de 18 minutos:
-            p 5.280 minutos × 0,82 ÷ 18 minutos por prenda = 240,53 prendas.
+            p 5.280 minutos x 0,82 ÷ 18 minutos por prenda = 240,53 prendas.
             p La capacidad planificada corresponde a 240 prendas completas.
-          .col-md-6
+          .col-lg-7.col-11
             .titulo-sexto.color-acento-contenido.mb-3
               h5 Tabla 22.
               span Construcción de la capacidad planificada por turno
-            .tabla-a.color-primario
+            .tabla-a.color-primario.t3
               table
                 thead
                   tr
-                    th Variable
-                    th Valor utilizado
+                    th.w-25 Variable
+                    th.w-25 Valor utilizado
                     th Interpretación
                 tbody
                   tr
@@ -319,34 +327,34 @@
                     td Capacidad planificada
                     td 240 prendas completas
                     td Corresponde al volumen estimado para el turno.
-        .row
-          .col-md-6.mb-4.mb-md-0
-            h3 Capacidad para varias referencias
-            p Cuando se procesan referencias con SAM diferentes, cada cantidad debe convertirse en minutos estándar.
-            h4 Fórmula para una mezcla de referencias
-            p Minutos requeridos = (unidades A × SAM A) + (unidades B × SAM B) + los resultados de las demás referencias programadas.
+        .row.justify-content-center
+          .col-lg-5.col-11
+            h4 Capacidad para varias referencias
+            p.mb-4 Cuando se procesan referencias con SAM diferentes, cada cantidad debe convertirse en minutos estándar.
+            h5 Fórmula para una mezcla de referencias
+            p Minutos requeridos = (unidades A x SAM A) + (unidades B x SAM B) + los resultados de las demás referencias programadas.
             p La mezcla puede ejecutarse cuando los minutos requeridos no superan los minutos estándar disponibles.
             p Si un módulo dispone de 4.329,60 minutos estándar y se programan 120 unidades con SAM de 18 minutos y 100 unidades con SAM de 20 minutos, el requerimiento es:
-            ul.lista-ul
+            ul.lista-ul.fa-lista
+              li.mb-1 
+                i.lista-ul__vineta
+                span.mb-0 #[b Primera referencia:] 120 x 18 = 2.160 minutos estándar.
+              li.mb-1 
+                i.lista-ul__vineta
+                span.mb-0 #[b Segunda referencia:] 100 x 20 = 2.000 minutos estándar.
+              li.mb-1 
+                i.lista-ul__vineta
+                span.mb-0 #[b Requerimiento total:] 2.160 + 2.000 = 4.160 minutos estándar.
               li 
                 i.lista-ul__vineta
-                | #[b Primera referencia:] 120 × 18 = 2.160 minutos estándar.
-              li 
-                i.lista-ul__vineta
-                | #[b Segunda referencia:] 100 × 20 = 2.000 minutos estándar.
-              li 
-                i.lista-ul__vineta
-                | #[b Requerimiento total:] 2.160 + 2.000 = 4.160 minutos estándar.
-              li 
-                i.lista-ul__vineta
-                | #[b Margen disponible:] 4.329,60 − 4.160 = 169,60 minutos estándar. 
-          .col-md-6
+                span.mb-0 #[b Margen disponible:] 4.329,60 - 4.160 = 169,60 minutos estándar. 
+          .col-lg-5.d-none.d-lg-block
             img(src='@/assets/curso/temas/t3/14.png', alt='')
     
     p El margen solo representa capacidad para otra unidad cuando resulta suficiente frente al SAM de la referencia adicional y cuando la secuencia puede completarse antes del cierre.
 
-    .row.justify-content-center.mb-5
-      .col-lg-6
+    .row.justify-content-center.mb-4(data-aos="fade-down")
+      .col-lg-7
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Tabla 23.
           span Variables que modifican la capacidad estimada
@@ -391,26 +399,28 @@
                 td Entrega incompleta o tardía de piezas e insumos.
                 td Disminuye el tiempo que puede convertirse en producción.
         
-    p La eficiencia prevista debe sustentarse en registros comparables, características de la referencia, estabilidad del método y disponibilidad de recursos. Utilizar un porcentaje sin respaldo produce una capacidad nominal que no representa las condiciones operativas.
+    p.mb-5 La eficiencia prevista debe sustentarse en registros comparables, características de la referencia, estabilidad del método y disponibilidad de recursos. Utilizar un porcentaje sin respaldo produce una capacidad nominal que no representa las condiciones operativas.
     
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Criterio de capacidad
 
-    p El resultado solo es válido para la referencia, la dotación, el tiempo y la eficiencia declarados. Cualquier cambio en estas condiciones exige realizar nuevamente el cálculo.
+    p.mb-0 El resultado solo es válido para la referencia, la dotación, el tiempo y la eficiencia declarados. Cualquier cambio en estas condiciones exige realizar nuevamente el cálculo.
+
 
     Separador
     #t_3_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.3  Indicadores de flujo, materiales y calidad
     
     p Los indicadores de flujo muestran cómo avanza el producto entre las operaciones. Los indicadores de materiales examinan el consumo, el aprovechamiento y las pérdidas. Las métricas de calidad establecen qué proporción cumple los requisitos y cuánto trabajo adicional se requiere para corregir desviaciones.
-    p Antes de calcularlos debe definirse el punto de medición. El producto en proceso puede contarse al final del turno o en una hora de corte determinada. El material puede medirse por masa, longitud, área o unidades, siempre que el numerador y el denominador utilicen la misma magnitud. En calidad, el número de defectos debe diferenciarse del número de unidades defectuosas, puesto que una prenda puede contener varios hallazgos.
+    p.mb-5 Antes de calcularlos debe definirse el punto de medición. El producto en proceso puede contarse al final del turno o en una hora de corte determinada. El material puede medirse por masa, longitud, área o unidades, siempre que el numerador y el denominador utilicen la misma magnitud. En calidad, el número de defectos debe diferenciarse del número de unidades defectuosas, puesto que una prenda puede contener varios hallazgos.
 
     .subt-2.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t3/subt.svg', alt='')
-      h3.mb-0.mx-3 Indicadores de flujo
+      .text.mx-1
+        h4.mb-0.ms-2.me-4 Indicadores de flujo
     
-    .row.justify-content-center.mb-4
+    .row.justify-content-center.align-items-center.mb-4
       .col-lg-8(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Tabla 24.
@@ -425,7 +435,7 @@
             tbody
               tr
                 td Cumplimiento de producción
-                td Producción real ÷ producción programada × 100.
+                td Producción real ÷ producción programada x 100.
                 td Muestra la proporción de la meta alcanzada durante el periodo.
               tr
                 td Tasa de salida
@@ -449,7 +459,7 @@
                 td Describe la frecuencia de los movimientos entre operaciones.
               tr
                 td Entrega completa
-                td Lotes con cantidad e identificación correctas ÷ lotes transferidos × 100.
+                td Lotes con cantidad e identificación correctas ÷ lotes transferidos x 100.
                 td Evalúa la integridad documental y cuantitativa de las transferencias.                     
       .col-lg-4.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t3/15.png', alt='')
@@ -461,17 +471,18 @@
         .d-flex.align-items-start.mb-3
           img.w-80x.d-none.d-lg-block.me-3(src='@/assets/curso/temas/t3/17.svg', alt='')
           p.mb-0 El reporte debe mantener continuidad entre turnos sin convertirse en una narración extensa. Los campos estructurados permiten comparar periodos; la sección de novedades aporta el contexto que las cifras no contienen. Cuando se presenta una diferencia, conviene separar el hecho observado, su duración, el efecto y la acción inmediata. La causa solo se registra como confirmada si existe evidencia; de lo contrario, se identifica como preliminar o pendiente de verificación.
-        p La identificación de la orden y la referencia evita atribuir a toda la planta una condición localizada. También permite relacionar el reporte con materiales, estándares y especificaciones. Si durante el turno se procesaron varias referencias, los datos deben segmentarse o indicar con claridad el alcance de cada registro. Consolidar productos diferentes bajo un único resultado puede ocultar variaciones de SAM, construcción, complejidad o requerimientos de calidad.
+        p.mb-0 La identificación de la orden y la referencia evita atribuir a toda la planta una condición localizada. También permite relacionar el reporte con materiales, estándares y especificaciones. Si durante el turno se procesaron varias referencias, los datos deben segmentarse o indicar con claridad el alcance de cada registro. Consolidar productos diferentes bajo un único resultado puede ocultar variaciones de SAM, construcción, complejidad o requerimientos de calidad.
     
-    p El producto en proceso se registra en una hora de corte. Además de la cantidad, deben identificarse la ubicación y el estado: pendiente de procesamiento, en espera, retenido, devuelto o listo para transferir.
+    p.mb-5 El producto en proceso se registra en una hora de corte. Además de la cantidad, deben identificarse la ubicación y el estado: pendiente de procesamiento, en espera, retenido, devuelto o listo para transferir.
 
     .subt-2.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t3/subt.svg', alt='')
-      h3.mb-0.mx-3 Indicadores de materiales
+      .text.mx-1
+        h4.mb-0.ms-2.me-4 Indicadores de materiales
     
     p El consumo real debe compararse con una referencia técnica correspondiente a la misma cantidad de producto, unidad de medida y condición del material. El estándar puede proceder de una ficha, un trazo aprobado, una lista de materiales o un cálculo validado.
 
-    .row.mb-4
+    .row.align-items-center.mb-4
       .col-lg-4.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t3/18.png', alt='')
       .col-lg-8(data-aos="fade-left")
@@ -482,7 +493,7 @@
           table
             thead
               tr
-                th Indicador
+                th.w-25 Indicador
                 th Fórmula
                 th Lectura técnica
             tbody
@@ -492,15 +503,15 @@
                 td Expresa la cantidad utilizada por encima o por debajo del referente.
               tr
                 td Índice de consumo
-                td Consumo real ÷ consumo estándar × 100.
+                td Consumo real ÷ consumo estándar x 100.
                 td Relaciona el consumo observado con la cantidad prevista.
               tr
                 td Desperdicio
-                td Material descartado ÷ material entregado × 100.
+                td Material descartado ÷ material entregado x 100.
                 td Muestra la proporción que no se incorpora al producto ni puede aprovecharse.
               tr
                 td Aprovechamiento
-                td Material incorporado al producto ÷ material consumido × 100.
+                td Material incorporado al producto ÷ material consumido x 100.
                 td Establece qué proporción del material consumido permanece en el resultado aceptado.
               tr
                 td Rendimiento por unidad
@@ -508,14 +519,14 @@
                 td Relaciona la salida conforme con el material utilizado.
               tr
                 td Devolución aprovechable
-                td Material devuelto en buen estado ÷ material entregado × 100.
+                td Material devuelto en buen estado ÷ material entregado x 100.
                 td Identifica la proporción que puede reintegrarse al inventario.
               tr
                 td Diferencia no identificada
                 td Material entregado menos los materiales incorporados, desperdiciados, devueltos y aún en proceso.
                 td Evidencia cantidades cuyo destino no puede determinarse con los registros disponibles.
     
-    p Un índice de consumo del 103 % indica que se utilizó una cantidad equivalente al 103 % del estándar. No representa un aprovechamiento del 103 %. En el índice de consumo, un valor superior a 100 % señala sobreconsumo; en el aprovechamiento, el porcentaje expresa qué parte del material consumido quedó incorporada al producto.
+    p.mb-5 Un índice de consumo del 103 % indica que se utilizó una cantidad equivalente al 103 % del estándar. No representa un aprovechamiento del 103 %. En el índice de consumo, un valor superior a 100 % señala sobreconsumo; en el aprovechamiento, el porcentaje expresa qué parte del material consumido quedó incorporada al producto.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
@@ -524,48 +535,49 @@
     p Material entregado = material incorporado al producto + desperdicio + material devuelto + material que continúa en proceso + diferencia no identificada.
     p Cada término cumple una función específica:
 
-    .row.mb-4
-      .col-md-6.col-lg-4.mb-5.mb-lg-0
+    .row.justify-content-center.mb-4
+      .col-md-6.col-lg-4.mb-3
         .tarjeta-avatar
           img(src='@/assets/curso/temas/t3/19.svg', alt='')
           .tarjeta.bg-color-11
             .p-4
               h4.text-center Material incorporado al producto
               p.mb-0.text-center Cantidad utilizada efectivamente en las unidades fabricadas.
-      .col-md-6.col-lg-4.mb-5.mb-lg-0
+      .col-md-6.col-lg-4.mb-3
         .tarjeta-avatar
           img(src='@/assets/curso/temas/t3/20.svg', alt='')
           .tarjeta.bg-color-11
             .p-4
               h4.text-center Desperdicio
               p.mb-0.text-center Material descartado que no puede reincorporarse al proceso.
-      .col-md-6.col-lg-4.mb-5.mb-lg-0
+      .col-md-6.col-lg-4.mb-3
         .tarjeta-avatar
           img(src='@/assets/curso/temas/t3/21.svg', alt='')
           .tarjeta.bg-color-11
             .p-4
               h4.text-center Material devuelto
               p.mb-0.text-center Sobrante identificado que conserva condiciones de uso.
-    .row.justify-content-center.mb-4
-      .col-md-6.col-lg-4.mb-5.mb-lg-0
+      .col-md-6.col-lg-4.mb-3
         .tarjeta-avatar
           img(src='@/assets/curso/temas/t3/22.svg', alt='')
           .tarjeta.bg-color-11
             .p-4
               h4.text-center Material en proceso
               p.mb-0.text-center Cantidad entregada que todavía permanece asociada con una orden activa.
-      .col-md-6.col-lg-4.mb-5.mb-lg-0
+      .col-md-6.col-lg-4.mb-3
         .tarjeta-avatar
           img(src='@/assets/curso/temas/t3/23.svg', alt='')
           .tarjeta.bg-color-11
             .p-4
               h4.text-center Diferencia no identificada
               p.mb-0.text-center Cantidad que no puede relacionarse con los destinos anteriores y requiere conciliación.
-    p Todas las magnitudes deben expresarse en unidades compatibles. No es válido restar metros de tejido, kilogramos de retal y unidades de accesorios dentro del mismo balance. Cada material requiere un cálculo independiente.
+    
+    p.mb-5 Todas las magnitudes deben expresarse en unidades compatibles. No es válido restar metros de tejido, kilogramos de retal y unidades de accesorios dentro del mismo balance. Cada material requiere un cálculo independiente.
 
     .subt-2.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t3/subt.svg', alt='')
-      h3.mb-0.mx-3 Indicadores de calidad
+      .text.mx-1
+        h4.mb-0.ms-2.me-4 Indicadores de calidad
 
     p La medición debe diferenciar unidad inspeccionada, unidad defectuosa, defecto y reproceso. Una unidad defectuosa contiene uno o más incumplimientos; un defecto corresponde a cada hallazgo. Por esta razón, diez prendas defectuosas pueden reunir más de diez defectos.
 
@@ -584,36 +596,36 @@
             tbody
               tr
                 td Unidades defectuosas
-                td Unidades con uno o más defectos ÷ unidades inspeccionadas × 100.
+                td Unidades con uno o más defectos ÷ unidades inspeccionadas x 100.
                 td Muestra la proporción de productos afectados por al menos un incumplimiento.
               tr
                 td Defectos por cien unidades
-                td Número de defectos ÷ unidades inspeccionadas × 100.
+                td Número de defectos ÷ unidades inspeccionadas x 100.
                 td Expresa la frecuencia de hallazgos y puede superar 100.
               tr
                 td Rendimiento a la primera
-                td Unidades conformes sin reproceso ÷ unidades procesadas × 100.
+                td Unidades conformes sin reproceso ÷ unidades procesadas x 100.
                 td Indica qué proporción cumplió los requisitos desde la primera ejecución.
               tr
                 td Reproceso
-                td Unidades intervenidas nuevamente ÷ unidades procesadas × 100.
+                td Unidades intervenidas nuevamente ÷ unidades procesadas x 100.
                 td Muestra la proporción que necesitó trabajo adicional.
               tr
                 td Rechazo
-                td Unidades no recuperables ÷ unidades inspeccionadas × 100.
+                td Unidades no recuperables ÷ unidades inspeccionadas x 100.
                 td Cuantifica la proporción que no puede liberarse.
               tr
                 td Liberación conforme
-                td Unidades aceptadas ÷ unidades verificadas × 100.
+                td Unidades aceptadas ÷ unidades verificadas x 100.
                 td Relaciona la salida aprobada con el total evaluado.
               tr
                 td Recurrencia de defecto
-                td Defectos de una misma categoría ÷ defectos totales × 100.
+                td Defectos de una misma categoría ÷ defectos totales x 100.
                 td Identifica la concentración de hallazgos repetitivos.
       .col-lg-4.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t3/24.png', alt='')
     
-    .row.justify-content-center.mb-4
+    .row.justify-content-center.mb-5
       .col-lg-5.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t3/25.png', alt='')
       .col-lg-7(data-aos="fade-left")
@@ -624,11 +636,12 @@
     
     .subt-2.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t3/subt.svg', alt='')
-      h3.mb-0.mx-3 Interpretación conjunta
+      .text.mx-1
+        h4.mb-0.ms-2.me-4 Interpretación conjunta
 
-    p Una conclusión sustentada no procede de una cifra aislada. La eficiencia debe contrastarse con la calidad; el cumplimiento, con el tiempo utilizado; el consumo, con la mezcla de referencias; el producto en proceso, con la tasa de salida y la ubicación de las acumulaciones.
+    p.mb-4 Una conclusión sustentada no procede de una cifra aislada. La eficiencia debe contrastarse con la calidad; el cumplimiento, con el tiempo utilizado; el consumo, con la mezcla de referencias; el producto en proceso, con la tasa de salida y la ubicación de las acumulaciones.
 
-    .row.justify-content-center.mb-5
+    .row.justify-content-center.mb-4
       .col-lg-8
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Tabla 27.
@@ -674,7 +687,7 @@
                 td La aceptación final se logra mediante intervenciones adicionales.
                 td Separar la conformidad inicial de la conformidad posterior al reproceso.
     
-    p La consistencia de la medición requiere documentar para cada indicador su nombre, propósito, alcance, fórmula, unidad, fuente, frecuencia, responsable, meta, exclusiones y regla de redondeo. Los cambios de método deben registrar la fecha de aplicación y la justificación correspondiente.
+    p.mb-5 La consistencia de la medición requiere documentar para cada indicador su nombre, propósito, alcance, fórmula, unidad, fuente, frecuencia, responsable, meta, exclusiones y regla de redondeo. Los cambios de método deben registrar la fecha de aplicación y la justificación correspondiente.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')

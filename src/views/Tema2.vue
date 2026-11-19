@@ -7,16 +7,17 @@
         span 2
       h1 Análisis del desempeño del proceso
     
-    .row.justify-content-center.mb-5(data-aos="fade")
+    .row.justify-content-center.mb-4(data-aos="fade")
       .col-lg-5.pe-lg-0.d-none.d-lg-block
         img(src='@/assets/curso/temas/t2/1.png', alt='')
       .col-lg-7.ps-lg-0
         .bg-color-4.br-tr.p-4.pt-5.h-100
-          img.w-80x.d-none.d-lg-block.me-3.mb-3(src='@/assets/curso/temas/t2/2.svg', alt='')
+          img.w-80x.d-none.d-lg-block.mb-3(src='@/assets/curso/temas/t2/2.svg', alt='')
           p El análisis del desempeño relaciona la capacidad disponible, el comportamiento de las operaciones y los estándares definidos para la planta. Su propósito es establecer una línea de referencia que permita interpretar resultados sin confundir el potencial técnico con la producción realmente alcanzada. La medición debe utilizar datos comparables, periodos claramente definidos y unidades consistentes (International Organization for Standardization [ISO], 2014a, 2014b).
           p.mb-0 La lectura comienza con la distinción entre condición prevista y resultado observado. La primera se deriva de estándares, tiempos disponibles, recursos habilitados y requisitos del producto; la segunda procede de registros generados durante la ejecución. La diferencia entre ambas no explica por sí misma una causa. Funciona como una señal que orienta la revisión hacia el abastecimiento, la disponibilidad, la secuencia, el método, la calidad del dato o cualquier novedad documentada en el periodo.
     
-    p Para que la comparación sea válida deben mantenerse constantes las unidades y el alcance. No resulta técnicamente adecuado confrontar minutos de una operación con unidades de una prenda completa, ni combinar resultados de referencias con estándares diferentes. La norma ISO 22400-2 subraya la necesidad de definir elementos, fórmulas, unidades y comportamiento temporal para los indicadores de manufactura; esta misma disciplina es aplicable a la construcción de una base de desempeño (ISO, 2014b).
+    p.mb-0 Para que la comparación sea válida deben mantenerse constantes las unidades y el alcance. No resulta técnicamente adecuado confrontar minutos de una operación con unidades de una prenda completa, ni combinar resultados de referencias con estándares diferentes. La norma ISO 22400-2 subraya la necesidad de definir elementos, fórmulas, unidades y comportamiento temporal para los indicadores de manufactura; esta misma disciplina es aplicable a la construcción de una base de desempeño (ISO, 2014b).
+
 
     Separador
     #t_2_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -27,7 +28,7 @@
     .cajon.color-acento-contenido.bg-color-8.p-4.mb-4(data-aos="fade")
       p.mb-0.text-center #[b Capacidad teórica en unidades = minutos totales disponibles ÷ SAM del producto]
     
-    p Los minutos totales disponibles corresponden a la suma del tiempo asignado a los recursos considerados. El SAM debe pertenecer al mismo producto, versión del método y alcance del cálculo. Si se mezclan referencias, periodos o estándares diferentes, el resultado pierde comparabilidad.
+    p.mb-4 Los minutos totales disponibles corresponden a la suma del tiempo asignado a los recursos considerados. El SAM debe pertenecer al mismo producto, versión del método y alcance del cálculo. Si se mezclan referencias, periodos o estándares diferentes, el resultado pierde comparabilidad.
 
     .row.justify-content-center.mb-4
       .col-lg-8(data-aos="fade-right")
@@ -83,31 +84,30 @@
           .col-lg-5.pe-lg-0.d-none.d-lg-block
             img(src='@/assets/curso/temas/t2/6.svg', alt='')
           .col-lg-7.ps-lg-0
-            .bg-color-5.h-100.p-4
+            .bg-color-5.h-100.p-4.px-xl-5
               p.mb-0 Un punto crítico es una condición cuya variación puede comprometer el flujo, la calidad, la seguridad o el cumplimiento. No todos los puntos críticos son cuellos de botella. Algunos corresponden a controles indispensables, como la verificación de materiales, la disponibilidad de equipos especializados o la liberación de información técnica. Su reconocimiento exige observar la secuencia y registrar evidencias, no asumir causas a partir de una sola medición.
         p.mb-0 El carácter crítico depende de la consecuencia asociada. La ausencia de una etiqueta puede interrumpir el empaque; una especificación no liberada puede detener varias operaciones; una máquina especializada sin alternativa puede limitar una familia completa de productos. En cambio, un recurso con alta ocupación no siempre constituye un punto crítico si dispone de capacidad suficiente y no afecta el ritmo global. La revisión debe relacionar la condición observada con su efecto verificable sobre el producto o el proceso.
       .col-lg-3.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t2/7.png', alt='')
     
     .row.justify-content-center.mb-5
-      .col-lg-4.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Identificar operaciones con acumulación persistente de trabajo.
-      .col-lg-4.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Comparar el ritmo de entrada y salida de cada etapa.
-      .col-lg-4.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Verificar paradas, esperas, abastecimiento y cambios de referencia.
-    .row.justify-content-center.mb-5
-      .col-lg-4.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Relacionar la restricción observada con el periodo y la orden analizada.
-      .col-lg-4.col-md-6
-        .bg-color-9
-          p.fw-bold.mb-0 Registrar la fuente del dato y la condición en la que fue obtenido.
+      .col-lg-4.col-md-6.mb-3
+        .tarjeta.bg-color-9.h-100.p-4
+          p.text-center.mb-0 Identificar operaciones con acumulación persistente de trabajo.
+      .col-lg-4.col-md-6.mb-3
+        .tarjeta.bg-color-9.h-100.p-4
+          p.text-center.mb-0 Comparar el ritmo de entrada y salida de cada etapa.
+      .col-lg-4.col-md-6.mb-3
+        .tarjeta.bg-color-9.h-100.p-4
+          p.text-center.mb-0 Verificar paradas, esperas, abastecimiento y cambios de referencia.
+      .col-lg-4.col-md-6.mb-3
+        .tarjeta.bg-color-9.h-100.p-4
+          p.text-center.mb-0 Relacionar la restricción observada con el periodo y la orden analizada.
+      .col-lg-4.col-md-6.mb-3
+        .tarjeta.bg-color-9.h-100.p-4
+          p.text-center.mb-0 Registrar la fuente del dato y la condición en la que fue obtenido.
         
-    .row.justify-content-center.mb-4
+    .row.justify-content-center.align-items-end
       .col-lg-8(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Tabla 15.
@@ -135,13 +135,14 @@
       .col-lg-4.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t2/8.png', alt='')
   
+
     Separador
     #t_2_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.2  Cuellos de botella y curvas de experiencia
     
-    p Un cuello de botella es el recurso, operación o condición que limita el ritmo del sistema, se manifiesta cuando la demanda sobre una etapa supera su capacidad efectiva durante un periodo suficiente para generar acumulación, esperas o incumplimiento. La identificación debe realizarse con datos del flujo, pues una acumulación ocasional puede obedecer a liberaciones por lotes, cambios de referencia o interrupciones temporales.
+    p.mb-4 Un cuello de botella es el recurso, operación o condición que limita el ritmo del sistema, se manifiesta cuando la demanda sobre una etapa supera su capacidad efectiva durante un periodo suficiente para generar acumulación, esperas o incumplimiento. La identificación debe realizarse con datos del flujo, pues una acumulación ocasional puede obedecer a liberaciones por lotes, cambios de referencia o interrupciones temporales.
 
-    .row.mb-4
+    .row.align-items-center.mb-4
       .col-lg-4.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t2/9.png', alt='')
       .col-lg-8(data-aos="fade-left")
@@ -186,7 +187,7 @@
           p.mb-0 La observación debe abarcar más de un punto del proceso. Cuando una operación limita el ritmo, suele presentarse una combinación de señales: acumulación antes del recurso, escasez de trabajo después de él, utilización sostenida y efecto sobre la salida. Una sola evidencia puede ser ambigua. Por ejemplo, la acumulación previa también aparece cuando se libera un lote completo o cuando la operación siguiente se detiene por una causa ajena al recurso examinado.
         p La persistencia diferencia una restricción estructural de una alteración temporal. Si la condición desaparece al restablecer el abastecimiento o completar un ajuste, el evento debe registrarse como novedad del periodo. Si se reproduce en condiciones comparables y mantiene su influencia sobre la salida, existe una base más sólida para considerarla una limitación del sistema. Aun así, la conclusión debe conservar el alcance observado y evitar generalizaciones hacia productos o turnos que no fueron analizados.
     
-    .row.justify-content-center.mb-4
+    .row.justify-content-center.align-items-center.mb-4
       .col-lg-8(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Tabla 17.
@@ -225,25 +226,26 @@
     .cajon.color-acento-contenido.bg-color-8.p-4.mb-4(data-aos="fade")
       p.mb-0 #[b Precaución metodológica:] la reducción del tiempo no debe atribuirse automáticamente a la experiencia. La comparación exige conservar el mismo método, producto, estándar, condiciones técnicas y unidad de medida. Si alguno de estos elementos cambia, la serie debe segmentarse.
     
-    p El análisis preliminar del efecto de experiencia puede estructurarse mediante una serie cronológica que relacione la producción acumulada con el tiempo promedio empleado por unidad. Para que la comparación sea técnicamente válida, los registros deben corresponder a periodos homogéneos y conservar la misma unidad de medida, referencia productiva y criterio de cálculo. La tendencia resultante se interpreta junto con las novedades documentadas durante la operación. Su lectura permite reconocer cambios asociados con la repetición, pero no sustituye la determinación del tiempo estándar ni el estudio detallado de los movimientos que integran el método de trabajo.
+    p.mb-4 El análisis preliminar del efecto de experiencia puede estructurarse mediante una serie cronológica que relacione la producción acumulada con el tiempo promedio empleado por unidad. Para que la comparación sea técnicamente válida, los registros deben corresponder a periodos homogéneos y conservar la misma unidad de medida, referencia productiva y criterio de cálculo. La tendencia resultante se interpreta junto con las novedades documentadas durante la operación. Su lectura permite reconocer cambios asociados con la repetición, pero no sustituye la determinación del tiempo estándar ni el estudio detallado de los movimientos que integran el método de trabajo.
 
     .row.justify-content-center.mb-4
       .col-lg-5.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t2/13.png', alt='')
       .col-lg-7(data-aos="fade-left")
-        .d-flex.align-items-start.mb-3
+        .d-flex.align-items-start
           img.w-80x.d-none.d-lg-block.me-3(src='@/assets/curso/temas/t2/14.svg', alt='')
           p.mb-0 Atribuir una reducción del tiempo exclusivamente a la experiencia exige descartar modificaciones simultáneas en las condiciones de producción. La incorporación de una guía, el cambio de maquinaria, el ajuste de la secuencia, la sustitución del material o la variación del tamaño del lote pueden modificar el desempeño observado. En sentido contrario, un incremento transitorio puede estar relacionado con una referencia de mayor complejidad, una combinación distinta de tallas, una interrupción técnica o una disponibilidad irregular de insumos. Cuando estas circunstancias se registran junto con los datos de producción, resulta posible diferenciar la tendencia histórica de los factores que alteran temporalmente el proceso y evitar que una relación estadística sea presentada como causalidad confirmada.
 
-    p La disminución asociada con la experiencia no mantiene un comportamiento indefinido ni necesariamente lineal. Durante las primeras repeticiones suelen producirse ajustes en la coordinación, la manipulación de materiales y la secuencia de ejecución; posteriormente, la magnitud de esas mejoras tiende a reducirse a medida que el método adquiere estabilidad. Al aproximarse a una condición relativamente constante, las variaciones del tiempo pueden relacionarse con cambios técnicos, disponibilidad de recursos, condiciones del material o confiabilidad del registro. Por consiguiente, la interpretación debe considerar la trayectoria de los datos, las condiciones bajo las cuales fueron obtenidos y los límites del efecto observado, sin reemplazar el estándar técnico vigente por el comportamiento histórico de la serie (Wright, 1936; Taifa et al., 2022).
+    p.mb-0 La disminución asociada con la experiencia no mantiene un comportamiento indefinido ni necesariamente lineal. Durante las primeras repeticiones suelen producirse ajustes en la coordinación, la manipulación de materiales y la secuencia de ejecución; posteriormente, la magnitud de esas mejoras tiende a reducirse a medida que el método adquiere estabilidad. Al aproximarse a una condición relativamente constante, las variaciones del tiempo pueden relacionarse con cambios técnicos, disponibilidad de recursos, condiciones del material o confiabilidad del registro. Por consiguiente, la interpretación debe considerar la trayectoria de los datos, las condiciones bajo las cuales fueron obtenidos y los límites del efecto observado, sin reemplazar el estándar técnico vigente por el comportamiento histórico de la serie (Wright, 1936; Taifa et al., 2022).
+
 
     Separador
     #t_2_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.3  Estándares técnicos de la planta
 
-    p Los estándares técnicos son referencias documentadas utilizadas para comparar la ejecución real con una condición definida. Pueden establecer requisitos del producto, parámetros de operación, tiempos, capacidades, métodos de registro y criterios de aceptación. Su función consiste en proporcionar una base común para la medición y evitar que cada área interprete de manera distinta la misma orden.
+    p.mb-4 Los estándares técnicos son referencias documentadas utilizadas para comparar la ejecución real con una condición definida. Pueden establecer requisitos del producto, parámetros de operación, tiempos, capacidades, métodos de registro y criterios de aceptación. Su función consiste en proporcionar una base común para la medición y evitar que cada área interprete de manera distinta la misma orden.
 
-    .row.justify-content-center.mb-4
+    .row.justify-content-center.align-items-center.mb-4
       .col-lg-8(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Tabla 18.
@@ -279,7 +281,7 @@
       .col-lg-4.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t2/15.png', alt='')
     
-    .bloque-texto-g.bg-color-2.br-tr.p-3.p-sm-4.p-md-5.mb-4(data-aos="fade")
+    .bloque-texto-g.bg-color-2.br-tr.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade")
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require_src('@/assets/curso/temas/t2/16.png')})`}"
       )
@@ -289,7 +291,7 @@
           br
           | La gestión del cambio evita comparar la ejecución con referencias obsoletas, cuando se modifica una construcción, un método o un parámetro, el estándar anterior no debe desaparecer sin trazabilidad: se conserva como antecedente, se identifica la nueva vigencia y se comunica a los puntos afectados. Este control permite explicar por qué dos periodos podrían no ser comparables y previene que los registros se interpreten como si hubieran sido generados bajo una misma condición.
     
-    .row.justify-content-center.mb-4
+    .row.justify-content-center.align-items-center.mb-4
       .col-lg-8(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Tabla 19.

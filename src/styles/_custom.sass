@@ -28,11 +28,12 @@
 .banner-interno__titulo h1, .banner-interno__titulo h2, 
 .banner-interno__titulo h3, .banner-interno__titulo h4, 
 .banner-interno__titulo h5, .banner-interno__titulo h6
-  color: $white!important  
+  color: $white !important  
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
   color: $white !important
 figcaption 
   font-weight: normal !important
+
 
 .banner-interno__titulo__icono 
   background-color: #FFE7C1
@@ -41,6 +42,8 @@ figcaption
 .banner-interno__fondo
   background-image: url(../assets/curso/temas/bg/miniportada.png) !important
   background-size: cover
+
+
 
 /**************************************************************/
 /***CUSTOM STYLES***/
@@ -112,7 +115,9 @@ figcaption
 
 .bg-fondo
   &-1
-    //background-image: url(../assets/curso/bg/3.svg)
+    background-image: url(../assets/curso/temas/bg/bg.png)
+    background-repeat: no-repeat
+    background-size: cover
 .bg-color
   &-1
     background-color: $color-primario
@@ -139,6 +144,13 @@ figcaption
 .bgcompl
   &-1
     background: #513013
+    margin-inline: -3.4rem
+    @media screen and (max-width: 992px)
+      margin-inline: -3rem  
+    @media screen and (max-width: 767px)
+      margin-inline: -1.4rem 
+  &-2
+    background: #F6D0AF
     margin-inline: -3.4rem
     @media screen and (max-width: 992px)
       margin-inline: -3rem  
@@ -179,18 +191,20 @@ figcaption
   position: relative  
   width: fit-content  
   img
-    width: 65px
+    width: 15px
     z-index: 1
-  h3 
-    z-index: 1
-  &::before
-    content: ''
-    position: absolute
-    background-color: #FBE8D7 
-    border-radius: 100px
-    width: 100%
-    height: 65%
-    z-index: 0
+  .text
+    h4 
+      z-index: 1
+      position: relative 
+    &::before
+      content: ''
+      position: absolute
+      background-color: #FBE8D7 
+      width: 100%
+      height: 100%
+      top: 0
+      z-index: 0
 .br-tl
   border-top-left-radius: 60px
 .br-tr
@@ -202,6 +216,10 @@ figcaption
   border-radius: 20px
 .w-80x
   width: 80px
+.tabla-a.t3
+  table
+    td
+      padding: 0.6em
 
 
 .tabla-a.color-primario
@@ -214,7 +232,7 @@ figcaption
 .slyder-f__btn i
   color: $color-acento-botones
 .acordion
-  &__accion__btn--b
+  &__accion__btn--b, &__accion__btn--a
     border-color: $color-acento-botones
     background-color: $color-acento-botones
   &__titulo h3
